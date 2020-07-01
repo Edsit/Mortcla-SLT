@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Morycla SLT 1.2.5", "Morycla SLT 1.2.5\Morycla SLT 1.2.5.vdproj", "{47DA1FE8-4AE8-4646-88E9-DF488DD81A6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47DA1FE8-4AE8-4646-88E9-DF488DD81A6E}.Debug|Default.ActiveCfg = Debug
+		{47DA1FE8-4AE8-4646-88E9-DF488DD81A6E}.Debug|Default.Build.0 = Debug
+		{47DA1FE8-4AE8-4646-88E9-DF488DD81A6E}.Release|Default.ActiveCfg = Release
+		{47DA1FE8-4AE8-4646-88E9-DF488DD81A6E}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

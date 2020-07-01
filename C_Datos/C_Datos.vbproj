@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0759E933-56E1-4397-974A-0E7CF244450C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>C_Datos</RootNamespace>
+    <AssemblyName>C_Datos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>C_Datos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>C_Datos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SQLite.NET">
+      <HintPath>..\..\..\SQLITE\SQLite.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cd_AlmacenFunc.vb" />
+    <Compile Include="Cd_Areas.vb" />
+    <Compile Include="Cd_Barrios.vb" />
+    <Compile Include="Cd_CCosto.vb" />
+    <Compile Include="Cd_Almacenes.vb" />
+    <Compile Include="Cd_Alm_Bajas.vb" />
+    <Compile Include="Cd_Alm_Entradas.vb" />
+    <Compile Include="Cd_Alm_Laboratorios.vb" />
+    <Compile Include="Cd_Alm_Lotes.vb" />
+    <Compile Include="Cd_Alm_MedForma.vb" />
+    <Compile Include="Cd_Alm_Productos.vb" />
+    <Compile Include="Cd_Alm_Salidas.vb" />
+    <Compile Include="Cd_Alm_Semaforo.vb" />
+    <Compile Include="Cd_Alm_TipoMed.vb" />
+    <Compile Include="Cd_Alm_TipoProd.vb" />
+    <Compile Include="Cd_Alm_TipoSalida.vb" />
+    <Compile Include="Cd_Auditoria.vb" />
+    <Compile Include="Cd_Cierre_Detalle.vb" />
+    <Compile Include="Cd_Con.vb" />
+    <Compile Include="Cd_Consecutivos.vb" />
+    <Compile Include="Cd_Cargos.vb" />
+    <Compile Include="Cd_Dep.vb" />
+    <Compile Include="Cd_Enfoque.vb" />
+    <Compile Include="Cd_EntradaDetalle.vb" />
+    <Compile Include="Cd_Entradas.vb" />
+    <Compile Include="Cd_Eps.vb" />
+    <Compile Include="Cd_Funcionarios.vb" />
+    <Compile Include="Cd_Genero.vb" />
+    <Compile Include="Cd_Meses.vb" />
+    <Compile Include="Cd_MesEstado.vb" />
+    <Compile Include="Cd_Mun.vb" />
+    <Compile Include="Cd_Nacionalidad.vb" />
+    <Compile Include="Cd_Perfiles.vb" />
+    <Compile Include="Cd_Proveedores.vb" />
+    <Compile Include="Cd_Rips_AC.vb" />
+    <Compile Include="Cd_Rips_AF.vb" />
+    <Compile Include="Cd_Rips_AM.vb" />
+    <Compile Include="Cd_Rips_AP.vb" />
+    <Compile Include="Cd_Rips_AT.vb" />
+    <Compile Include="Cd_Rips_CT.vb" />
+    <Compile Include="Cd_Rips_US.vb" />
+    <Compile Include="Cd_Sedes.vb" />
+    <Compile Include="Cd_SedesDir.vb" />
+    <Compile Include="Cd_SedesTel.vb" />
+    <Compile Include="Cd_Stop.vb" />
+    <Compile Include="Cd_Stop_Areas.vb" />
+    <Compile Include="Cd_T2.vb" />
+    <Compile Include="Cd_T3.vb" />
+    <Compile Include="Cd_T4.vb" />
+    <Compile Include="Cd_T5.vb" />
+    <Compile Include="Cd_T6.vb" />
+    <Compile Include="Cd_T7.vb" />
+    <Compile Include="Cd_Tdoc.vb" />
+    <Compile Include="Cd_TipoUsuario.vb" />
+    <Compile Include="Cd_Traslados.vb" />
+    <Compile Include="Cd_T_Error.vb" />
+    <Compile Include="Cd_UsuarioEnfoque.vb" />
+    <Compile Include="Cd_Usuarios.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\C_Entidad\C_Entidad.vbproj">
+      <Project>{8bf16433-a375-484a-ac75-51852036fe26}</Project>
+      <Name>C_Entidad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
